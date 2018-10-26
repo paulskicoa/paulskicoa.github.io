@@ -1,0 +1,284 @@
+body {
+	font-family: 'K2D', sans-serif;
+	background-color: #2C6BB1;
+	text-align: center;
+}
+
+.jumbotron, .jumbotron-fluid {
+	color: white;
+	background-color: #2C6BB1;
+}
+
+.container-2 {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2rem;
+}
+
+.input-group {
+	margin: 0.5rem;
+}
+
+#input-group-1 {
+	width: 23rem;
+}
+
+.input-group-text {
+	border: 0;
+	color: white;
+	background-color: #73A1D4;
+	border-top-left-radius: 0.4rem;
+	border-bottom-left-radius: 0.4rem;
+}
+
+div.jumbotron.jumbotron-fluid {
+	padding-top: 5rem;
+	margin-bottom: 0;
+}
+
+.card-deck {
+	justify-content: center;
+	/* margins to offset the -15px set by bootstrap, otherwise the content will overflow */
+	margin-left: 0px;
+	margin-right: 0px;
+	max-height: 20rem; /* 320px at default 16px = 1rem */
+	align-items: flex-start; /* columns will be different widths */
+	
+}
+
+.card {
+	transition: all 0.1s;
+}
+
+.card:hover {
+	border: 3px solid #FFAD2F;
+}
+
+/*.card:hover .card-header {
+	background-color: #FFAD2F;
+}*/
+
+.author-info {
+	padding-top: 2rem;
+	color: white;
+	text-align: center;
+}
+
+ .card-header {
+	text-align: center;
+	transition: background-color 0.5s;
+	background-color: #f8f9fa;
+}
+
+ .card-body {
+	text-align: center;
+	color: black;
+}
+
+ .scroll {
+	max-height: 20rem;
+    overflow-y: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#header-message {
+	margin-top: 2rem;
+}
+
+#button-and-headline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1rem;
+}
+
+.icon {
+	width: 3rem;
+	height: 3rem;
+}
+
+.icon-arrow-circle-left {
+	fill: white;
+	transition: fill 0.5s;
+}
+
+#arrow-box-back:hover .icon-arrow-circle-left {
+	fill: #FFAD2F;
+}
+
+#arrow-box-back:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#arrow-box-back {
+	margin-right: 2rem;
+	transition: all 0.5s;
+}
+
+.icon-arrow-circle-right {
+	fill: white;
+	transition: fill 0.5s;
+}
+
+#arrow-box-forward:hover .icon-arrow-circle-right {
+	fill: #FFAD2F;
+}
+
+#arrow-box-forward:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#arrow-box-forward {
+	transition: all 0.5s;
+	margin-left: 2rem;
+	position: relative;
+	top: 0.55rem;
+}
+
+/* this block gets rid of bootstrap blue highlight on form field focus */
+input[type="text"], textarea {
+	outline: none;
+	box-shadow: none !important;
+	border: 1px solid #ccc !important;
+}
+
+select {
+	outline: none;
+	box-shadow: none !important;
+	border: 1px solid #ccc !important;
+}
+
+
+#ipAndCidr {
+	border-top-right-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
+	transition: all 0.1s;
+}
+
+#ipAndCidr:focus {
+	border-width: 3px !important;
+	border-style: solid !important; 
+	border-color: #FFAD2F !important;
+}
+
+#numSubnets {
+	border-top-right-radius: 0.4rem;
+	border-bottom-right-radius: 0.4rem;
+	transition: all 0.1s;
+}
+
+#numSubnets:focus {
+	border-width: 3px !important;
+	border-style: solid !important;
+	border-color: #FFAD2F !important;
+}
+
+a {
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFAD2F;
+	text-decoration: none;
+}
+
+#modal-close {
+	background-color: #2C6BB1;
+}
+
+#invalidInputModalTitle {
+	padding-left: 10.5rem;
+}
+
+.card-body-scroll {
+	height: 100%;
+}
+
+.list-group {
+	height: 100%;
+}
+
+.list-group-item {
+	flex: 1;
+}
+
+.form-control {
+	height: 3rem;
+}
+
+.subnet-select {
+	height: 3rem;
+	width: 70%;
+	padding-left: 12px;
+}
+
+#selector-input-group {
+	width: 23rem;
+}
+
+#network-header-and-checkbox {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#network-header {
+	flex: 1;
+	padding-left: 4rem;
+	border-bottom: 0;
+}
+
+#addresses-header-and-checkbox {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+#addresses-header {
+	flex: 1;
+	padding-left: 4rem;
+	border-bottom: 0;
+}
+
+.dropdown-toggle {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: transparent;
+	cursor: pointer;
+}
+
+.viewbox-cog {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.icon-cog {
+	fill: #212529;
+	opacity: 0.8;
+}
+
+.checkbox-menu li label {
+    display: block;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin:0;
+}
+
+.checkbox-menu li input {
+    margin: 0px 5px;
+    top: 2px;
+    position: relative;
+}
